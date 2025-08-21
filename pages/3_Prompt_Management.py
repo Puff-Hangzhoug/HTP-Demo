@@ -83,6 +83,7 @@ def display_prompt_info(prompt_info: dict):
                         f"输入 {var}:",
                         height=100,
                         placeholder=f"请输入 {var} 的测试内容...",
+                        key=f"{prompt_info['filename']}__{var}",
                     )
 
                 if st.button("生成测试结果"):
